@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "d601894b-c292-413b-a484-4538bdf094b8",
+		"name": "yammyAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all RecipiesList",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get one movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1510/recipiesLists/1642067929941",
+					"host": [
+						"localhost"
+					],
+					"port": "1510",
+					"path": [
+						"recipiesLists",
+						"1642067929941"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Recipie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"recipieName\": \"Chicken Biriyani\",\n        \"foodType\": 0,\n        \"ingredients\": \"hi\",\n        \"stepstoPrepare\": \"hello\",\n        \"image\": {\n            \"url\": \"/images/1.jpeg\",\n            \"altInfo\": \"Biriani Images\"\n        }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1510/recipiesLists/1642067929941",
+					"host": [
+						"localhost"
+					],
+					"port": "1510",
+					"path": [
+						"recipiesLists",
+						"1642067929941"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Recipie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1510/recipiesLists/1642067929941",
+					"host": [
+						"localhost"
+					],
+					"port": "1510",
+					"path": [
+						"recipiesLists",
+						"1642067929941"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Recipie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"recipieName\": \"Chicken Biriyani\",\n        \"foodType\": 1,\n        \"ingredients\": \"hello\",\n        \"stepstoPrepare\": \"hell\",\n        \"image\": {\n            \"url\": \"/images/1.jpeg\",\n            \"altInfo\": \"Biriani Images\"\n        }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1510/recipiesLists/1642067929941",
+					"host": [
+						"localhost"
+					],
+					"port": "1510",
+					"path": [
+						"recipiesLists",
+						"1642067929941"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
